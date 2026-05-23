@@ -1,0 +1,30 @@
+university:
+  - name: Universiteit Antwerpen
+    courses:
+      - position: <i class="fa-solid fa-chalkboard-user"></i> Teaching assistant
+        name: Number Theory
+        level: Bachelor 3
+        specialisation: Mathematics
+        taught: Julian Lyczak
+        date: Fall 2024/2025
+
+      - position: <i class="fa-solid fa-chalkboard-user"></i> Teaching assistant
+        name: "Algebra III: Fields"
+        level: Bachelor 2
+        specialisation: Mathematics
+        taught: Julian Lyczak
+        date: Spring 2024/ 2025/2026
+
+      - position: <i class="fa-solid fa-chalkboard-user"></i> Teaching assistant
+        name: Fields and Galois Theory
+        level: Bachelor 3
+        specialisation: Mathematics
+        taught: Karim Johannes Becher
+        date: Fall 2023
+
+      - position: <i class="fa-solid fa-chalkboard-user"></i> Teaching assistant
+        name: "Algebra III: Fields"
+        level: Bachelor 2
+        specialisation: Mathematics
+        taught: Ignacio Barros
+        date: Spring 2023

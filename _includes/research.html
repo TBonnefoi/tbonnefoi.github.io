@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <body>
+    <div class="tab-content" id="Research-content">
+      <div style="margin: 15px; padding-top: 1px; padding-bottom: 30px">
+        {% if site.data.publications.in-preparation %}
+        <h1>In preparation</h1>
+        {% for item in site.data.publications.in-preparation%} {% endfor %} {%
+        endif %} {% if site.data.publications.preprint %}
+        <h1>Preprints</h1>
+        {% for item in site.data.publications.preprint%} {% endfor %} {% endif
+        %} {% if site.data.publications.submitted %}
+        <h1>Submitted</h1>
+        {% for item in site.data.publications.submitted%} {% endfor %} {% endif
+        %} {% if site.data.publications.published %}
+        <h1>Published</h1>
+        <div class="list">
+          {% for item in site.data.publications.published%}
+          <div class="article">
+            <p>
+              {% if item.open-access %}<i class="ai ai-open-access ai-lg"></i>
+              {% endif %}
+
+              <em>{{ item.title -}} </em>
+
+              {%- if item.coauthors -%}, joint work with {% for coauthor in
+              item.coauthors %} {% if forloop.last %} and {% endif %} {%- if coauthor.url -%}
+              <a href="{{coauthor.url}}" target="_blank">
+                {{ coauthor.name -}}</a
+              >
+              {%- else -%} {{ coauthor.name -}} {%- endif -%} {%- if forloop.index != forloop.length -%},{%- else -%}. {% endif %} {% endfor %} {% endif
+              %}
+
+              <strong> {{item.journal}}</strong>, {% if item.reference %}
+              {{item.reference}}, {% endif %} {% if item.date %} {{item.date}}
+              {% endif %} {% if item.doi %}
+              <a href="{{item.doi}}" target="_blank"
+                ><i class="ai ai-doi ai-lg"></i
+              ></a>
+              {% endif %} {% if item.arxiv %}
+              <a href="{{item.arxiv}}" target="_blank"
+                ><i class="ai ai-arxiv ai-lg"></i
+              ></a>
+              {% endif %}
+            </p>
+
+            {% if item.abstract %}
+            <p><strong>Abstract:</strong> {{item.abstract}}</p>
+            {% endif %}
+{% if item.bibtex %}
+            <p class="bibtex-{{ item.id }}-container">
+              <label for="bibtex-{{ item.id }}-toggle" class="bibtex-button">
+                <span>Bibtex</span>
+                <i class="fa-solid fa-caret-right fa-sm"></i>
+
+                <input id="bibtex-{{ item.id }}-toggle" type="checkbox" />
+              </label>
+              <div class="bibtex" id="bibtex-{{ item.id }}-content">
+                {{item.bibtex}}
+              </div>
+            </p>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </body>
+</html>

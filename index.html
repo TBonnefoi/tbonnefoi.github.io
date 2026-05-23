@@ -1,0 +1,112 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: test
+title: Timothée Bonnefoi
+
+---
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+    <div class="depressed-box" style="margin-bottom: 25px">
+      <div id="split">
+        <div id="self" class="subbox">
+          <div id="photo" style="text-align: center">
+            <img
+              style="max-width: 65%; clip-path: circle(43%)"
+              src="assets/images/self.jpg"
+              alt="A picture of me"
+            />
+          </div>
+
+          <p style="text-align: center">
+            <strong style="font-size: 18px">Timothée Bonnefoi </strong> <br />
+            Department of Mathematics <br />
+            Universiteit Antwerpen <br />
+            1 Middelheimlaan <br />
+            2020 Antwerp, Belgium
+          </p>
+          <p style="text-align: center; margin-top: 0px">
+            &lt;first name&gt;.&lt;surname&gt;<br />@uantwerpen.be
+          </p>
+
+          <div style="margin-top: auto; padding-top: 10px" class="menu">
+            {% for item in site.data.links.links %}
+            <div class="icon">
+              <a
+                href="{{item.url}}"
+                target="_blank"
+                title="{{item.tooltip}}"
+                class="nav"
+              >
+                {{ item.title }}
+              </a>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div style="flex-grow: 1" class="subbox">
+          <p>
+            I am in the final year of my PhD at the Universiteit of Antwerpen under
+            the supervision of <a href="https://wendylowen.com/" target="_blank">Wendy Lowen</a> and <a href="https://arnemertens.com/" target="_blank">Arne Mertens</a>. Have a look at
+            <a href="assets/pdf/CV.pdf" target="_blank">CV</a> (pdf) or my
+            <a href="assets/pdf/researchStatement.pdf" target="_blank"
+              >Research statement</a
+            >.
+          </p>
+          <p>
+            For my thesis I have developped a formal theory of toposes in some
+            sufficiently nice 2-categories.
+          </p>
+          <p>
+            My research interests center around category theory and include
+            topos theory, formal category theory as well as the links with logic
+            and type theory. My long term goal is to apply toposes to physics
+            and complex systems.
+          </p>
+        </div>
+
+        <div id="pic" class="subbox">
+          <img
+            src="assets/images/Bric_Bouchet.png"
+            alt="Bric Bouchet (Queyras)"
+            style="max-width: 100%; border-radius: 10px"
+          />
+        </div>
+      </div>
+
+      <nav id="selector" class="menu">
+        {% for item in site.data.subpages.subsections %}
+        <label for="{{ item.name }}-toggle" class="button">
+          <span>{{ item.name }}</span>
+          <input {% if item.name == "Home" %} checked {% endif %} name="tab" id="{{ item.name }}-toggle" type="radio">
+          </label>
+        {% endfor %}
+      </div>
+    </nav>
+
+    {% if site.data.subpages.subsections %}
+    {% for item in site.data.subpages.subsections %}
+    {% include {{ item.url }} %}
+    {% endfor %}
+    {% endif %}
+    </div>
+  </body>
+</html>

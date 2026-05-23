@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <body>
+    <div class="tab-content" id="Teaching-content">
+      <div
+        class="depressed-box"
+        style="margin: 15px; padding-top: 1px; padding-bottom: 30px"
+      >
+        {% if site.data.teaching.university %} {% for university in
+        site.data.teaching.university %}
+        <h2>{{university.name}}</h2>
+
+        <div class="date-list">
+          <div class="date-split">
+            {% if university.courses %} {% for course in university.courses %}
+            <div class="date">{{course.date}}</div>
+            <div style="display: flex; align-items: center">
+              <div>
+                {{course.position}} for <strong>{{course.name}}</strong> given
+                to students of {{course.level}} of {{course.specialisation}}, {%
+                if course.taught %}taught by {{course.taught}} {% endif %}
+              </div>
+            </div>
+            {% endfor %} {% endif %}
+          </div>
+        </div>
+        {% endfor %} {% endif %}
+      </div>
+    </div>
+  </body>
+</html>

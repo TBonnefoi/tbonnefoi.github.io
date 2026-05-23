@@ -1,0 +1,9 @@
+subsections:
+  - name: Home
+    url: home.html
+  - name: Research
+    url: research.html
+  - name: CV
+    url: cv.html
+  - name: Teaching
+    url: teaching.html

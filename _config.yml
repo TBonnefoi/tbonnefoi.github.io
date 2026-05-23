@@ -18,29 +18,24 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-domain: timothee.tbonnefoi.com
-url: https://timothee.tbonnefoi.com
-
-title: Your awesome title
+title: Timothée Bonnefoi
 email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://timothee.tbonnefoi.com" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  tbonnefoi
+description:
+  >- # I am PhD student at the University of Antwerp under the supervision of Wendy Lowen and Arne Mertens. I am currently finishing my thesis on formal toposes.
 
-remote_theme: alshedivat/al-folio
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# sass:
+#   sass_dir: _sass
+#   style: compressed
 
 # Build settings
 # theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
-
-
-
+  - jekyll-sass-converter
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

@@ -1,0 +1,22 @@
+---
+---
+
+@use "main";
+
+{% if site.data.subpages.subsections %}
+{% for item in site.data.subpages.subsections %}
+.main:has(#{{item.name}}-toggle:checked) #{{item.name}}-content {
+    display: block;
+}
+
+{% endfor %}
+{% endif %}
+
+{% if site.data.publications.published %}
+{% for item in site.data.publications.published %}
+.article:has(#bibtex-{{ item.id }}-toggle:checked) #bibtex-{{ item.id }}-content {
+    display: block;
+}
+
+{% endfor %}
+{% endif %}

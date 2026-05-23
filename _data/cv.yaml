@@ -1,0 +1,93 @@
+positions:
+  - title: PhD student
+    institution: Universiteit Antwerpen
+    location: Antwerp, Belgium
+    date: Dec. 2022 - now
+    supervisor:
+      - name: Wendy Lowen
+        url: https://wendylowen.com/
+      - name: Arne Mertens
+        url: https://arnemertens.com/
+    other: DeHousse scholarship holder.
+
+stays:
+  - title: Internship
+    institution: University of San Diego
+    location: San Diego, United States
+    date: Feb. - July 2022
+    supervisor:
+      - name: Micheal Shulman
+        url: https://home.sandiego.edu/~shulman/
+    # Use with if it was an actual research stay
+
+  - title: Internship
+    institution: Università degli Studi dell’Insubria
+    location: Como, Italy
+    date: Sep. 2021 - Jan. 2022
+    supervisor:
+      - name: Olivia Caramello
+        url: https://www.oliviacaramello.com/
+    other: Continued in my PhD project
+
+  - title: Master 2 of Mathematics Internship
+    institution: FMF, Univerza v Ljubljani
+    location: (Remote) Ljubljana, Slovenia
+    date: Apr. - July 2021
+    supervisor:
+      - name: Alex Simpson
+        url: https://alexksimpson.github.io/
+    other: Article in preparation
+
+  - title: Master 1 of Physics Internship
+    institution: Université de Tours
+    location: (Remote) Tours, France
+    date: May - July 2020
+    supervisor:
+      - name: Romain Gicquaud
+        url: http://www.lmpt.univ-tours.fr/~gicquaud/
+
+  - title: Master 1 of Mathematics Internship
+    institution: University of Bath
+    location: Bath, United Kingdom
+    date: June - July 2019
+    supervisor:
+      - name: Hendrik Weber
+        url: https://www.uni-muenster.de/AMM/weber/index.shtml
+    other: Published as <em>A priori bounds for rough differential equations with a non-linear damping term</em>
+
+  - title: Bachelor 3 of Mathematics
+    institution: LAPP Annecy, Université Savoie-MontBlanc
+    location: Annecy, France
+    date: June - July 2018
+    supervisor:
+      - name: Stéphane Jézequel
+        url: https://orcid.org/0000-0001-7369-6975
+      - name: Francesco Costanza
+        url:
+
+education:
+  - title: "Doctor of Science: Mathematics"
+    institution: Universiteit Antwerpen
+    location: Antwerp, Belgium
+    date: Fall 2026 (Expected)
+
+  - title: Diplôme de l'Ecole Normale Supérieure de Lyon
+    institution: ENS Lyon
+    location: Lyon, France
+    date: 2022
+    other: Including course of Bachelor 3 of Computer Science and Biology
+
+  - title: Master Mathématiques avancées
+    intitution: ENS Lyon
+    location: Lyon, France
+    date: 2021
+
+  - title: Master 1 Sciences de la Matière (Materials science)
+    institution: ENS Lyon
+    location: Lyon, France
+    date: 2020
+
+  - title: "Bachelor of Sciences: Physics"
+    institution: Université Claude Bernard Lyon 1
+    location: Lyon, France
+    date: 2018

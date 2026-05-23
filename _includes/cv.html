@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <body>
+    <div class="tab-content" id="CV-content">
+      <div
+        class="depressed-box"
+        style="margin: 15px; padding-top: 1px; padding-bottom: 30px"
+      >
+        {% if site.data.cv.positions %}
+
+        <h2>Research positions held</h2>
+        <div class="date-list">
+          {% for position in site.data.cv.positions %}
+          <div class="date-split">
+            <div class="date">{{position.date}}</div>
+            <div style="display: flex; align-items: center">
+              <div>
+                <i class="fa-solid fa-pen-to-square"></i>
+                <strong>{{position.title}}</strong> at
+                <em>{{position.institution}}</em>, {{position.location}}, {% if
+                position.supervisor %} under the supervision of {% for
+                supervisor in position.supervisor %} {% if forloop.last %} and
+                {% endif %} {% if supervisor.url %}<a
+                  href="{{supervisor.url}}"
+                  target="_blank"
+                  >{{ supervisor.name -}}</a
+                >{% else %}{{ supervisor.name -}}{% endif %} {%- if
+                forloop.index != forloop.length-%},{%- else -%}.{%- endif -%} {%
+                endfor %} {% endif %} {{position.other}}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %} {% if site.data.cv.stays %}
+
+        <h2>Research stays</h2>
+        <div class="date-list">
+          {% for stay in site.data.cv.stays %}
+          <div class="date-split">
+            <div class="date">{{stay.date}}</div>
+            <div style="display: flex; align-items: center">
+              <div>
+                <i class="fa-solid fa-book"></i>
+                <strong>{{stay.title}}</strong> at
+                <em>{{stay.institution}}</em>, {{stay.location}}, {% if
+                stay.supervisor %} under the supervision of {% for supervisor in
+                stay.supervisor %} {% if forloop.last %} and {% endif %} {% if
+                supervisor.url %}<a href="{{supervisor.url}}" target="_blank"
+                  >{{ supervisor.name -}}</a
+                >{% else %}{{ supervisor.name -}}{% endif %} {%- if
+                forloop.index != forloop.length-%},{%- else -%}.{%- endif -%} {%
+                endfor %} {% endif %}{{position.other}}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+        {% endif %} {% if site.data.cv.education %}
+
+        <h2>Education</h2>
+        <div class="date-list">
+          {% for diploma in site.data.cv.education %}
+          <div class="date-split">
+            <div class="date">{{diploma.date}}</div>
+            <div style="display: flex; align-items: center">
+              <div>
+                <i class="fa-solid fa-certificate"></i>
+                <strong>{{diploma.title}}</strong> at
+                <em>{{diploma.institution}}</em>, {{diploma.location}}.
+                {{position.other}}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+        {% endif %}
+      </div>
+    </div>
+  </body>
+</html>
