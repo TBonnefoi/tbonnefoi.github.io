@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <body>
+    <div class="tab-content" id="Research-content">
+      <div style="margin: 15px; padding-top: 1px; padding-bottom: 30px">
+        {% if site.data.publications.future %}
+        <h1>Future</h1>
+        {% for item in site.data.publications.future%} {% endfor %} {% endif %}
+        {% if site.data.publications.past %}
+        <h1>Past</h1>
+        <div class="list">
+          {% for item in site.data.publications.published%}
+          <div class="talk">
+            <p>
+              {% if item.in-person %}<i
+                class="fa-solid fa-person-chalkboard fa-sm"
+              ></i>
+              {% else %}<i class="fa-solid fa-headset fa-sm"></i>
+              {% endif %}
+
+              <em>{{ item.title -}} </em>
+
+              {%- if item.coauthors -%}, on joint work with {% for coauthor in
+              item.coauthors %} {% if forloop.last %} and {% endif %} {%- if
+              coauthor.url -%}
+              <a href="{{coauthor.url}}" target="_blank">
+                {{ coauthor.name -}}</a
+              >
+              {%- else -%} {{ coauthor.name -}} {%- endif -%} {%- if
+              forloop.index != forloop.length -%},{%- else -%}. {% endif %} {%
+              endfor %} {% endif %}
+
+              <a
+                href="{{item.conference.url}}"
+                target="{{item.conference.name}}"
+              ></a>
+              {% if item.conference.location %}, {{ item.conference.location }}
+              {% endif %} {% if item.date %}, {{ item.date }} {% endif %}. {% if
+              item.slides %}
+              <a href="{{item.slides}}" target="_blank"
+                ><i class="fa-solid fa-tv fa-sm"></i
+              ></a>
+              {% endif %} {% if item.video %}
+              <a href="{{item.video}}" target="_blank"
+                ><i class="fa-solid fa-video fa-sm"></i
+              ></a>
+              {% endif %} {% if item.abstract %}
+            </p>
+
+            <p><strong>Abstract:</strong> {{item.abstract}}</p>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </body>
+</html>

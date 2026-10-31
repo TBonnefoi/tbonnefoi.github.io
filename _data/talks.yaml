@@ -1,0 +1,21 @@
+future:
+past:
+  - title: Formal topos Theory
+    in-person: 1
+    conference:
+      - name: PSSL113
+      - url: https://sites.uclouvain.be/pssl113/index.html
+      - location: Louvain-la-Neuve, Belgium
+    date: September 26th, 2026
+    coauthors:
+    slides: https://sites.uclouvain.be/pssl113/slides/Bonnefoi-Timothee.pdf
+    video:
+    abstract: |
+    The success of the theories of sheaves and sheaf toposes (1) has encouraged the definition of similar objects in different contexts: enriched categories (2), higher categories (3), etc. But there is no overarching theory unifying these ad-hoc extensions into a general abstract framework. In this talk I’ll present a formal theory that aims to provide this framework. It is applicable in any sufficiently well-behaved 2-category B, and in particular it specialises to Grothendieck toposes in Cat, to locales in Pos and, to (∞, 1)-toposes in the homotopy 2-category of the (∞, 2)-category of (∞, 1)-categories. Moreover it is possible to recover several different characterisations of toposes under mild additional conditions on the 2-category B that are satisfied in all known examples.
+    This theory replaces the pullbacks appearing in the familiar characterisations of toposes with the base change functors of a new fibration generalising the codomain fibration and entirely determined by the 2-category B. This fibration relies on the introduction of a new object, the pleronomial object, which extends one of the universal properties of slice categories. Finally I will discuss an application of this theory to the 2-category B of symmetric monoidal categories and symmetric colax monoidal functors in terms of extension of scalars functors for comodule categories of the cofree comonoids.
+    This is part of my PhD work under the supervision of Wendy Lowen and Arne Mertens.
+
+    References
+    (1) M. Artin, A. Grothendieck, J-L. Verdier, Theorie des Topos et Cohomologie Etale des Schemas I, II, III 1971 Lecture Notes in Mathematics Springer
+    (2) F. Borceux and C. Quinteiro, A theory of enriched sheaves 1996 Cahiers de Topologie et Géométrie Différentielle Catégoriques, Vol. 37, No. 2 Dunod éditeur, publié avec le concours du CNRS p. 145-162
+    (3) J. Lurie, Higher Topos Theory 2009 Annals of Mathematics Studies Princeton University Press.

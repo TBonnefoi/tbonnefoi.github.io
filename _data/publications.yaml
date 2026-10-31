@@ -31,7 +31,7 @@ published:
          the algebraic framework which permits to derive an estimate on
          higher order conditions of a coherent controlled rough path in
          terms of the regularity condition at lowest level.
-    # HACK: Use pre here to get food formatting
+    # HACK: Use pre here to get good formatting
     bibtex: |
       <pre>
         @Article{BCMW2022,

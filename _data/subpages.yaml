@@ -3,6 +3,8 @@ subsections:
     url: home.html
   - name: Research
     url: research.html
+  - name: Talks
+    url: talks.html
   - name: CV
     url: cv.html
   - name: Teaching
