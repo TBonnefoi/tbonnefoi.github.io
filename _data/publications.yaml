@@ -44,25 +44,3 @@ published:
                 doi = {10.1016/j.jde.2022.02.006},
                 journaltitle = {Journal of Differential Equations},
         }
-       </pre>
-
-    # abstract     = {We consider a rough differential equation with a non-linear
-    #    damping drift term: {\textbackslash}begin\{align*\} dY(t) = -
-    #    {\textbar}Y{\textbar}{\textasciicircum}\{m-1\} Y(t) dt +
-    #    {\textbackslash}sigma(Y(t)) dX(t),
-    #    {\textbackslash}end\{align*\} where \$X\$ is a branched rough
-    #    path of arbitrary regularity \${\textbackslash}alpha
-    #    {\textgreater}0\$, \$m{\textgreater}1\$ and where
-    #    \${\textbackslash}sigma\$ is smooth and satisfies an \$m\$ and
-    #    \${\textbackslash}alpha\$-dependent growth property. We show a
-    #    strong a priori bound for \$Y\$, which includes the "coming
-    #    down from infinity" property, i.e. the bound on \$Y(t)\$ for a
-    #    fixed \$t{\textgreater}0\$ holds uniformly over all choices of
-    #    initial datum \$Y(0)\$. The method of proof builds on recent
-    #    work by Chandra, Moinat and Weber on a priori bounds for the
-    #    \${\textbackslash}phi{\textasciicircum}4\$ SPDE in arbitrary
-    #    subcritical dimension. A key new ingredient is an extension of
-    #    the algebraic framework which permits to derive an estimate on
-    #    higher order conditions of a coherent controlled rough path in
-    #    terms of the regularity condition at lowest level.},
-    #     annotation   = {Comment: 27 pages, typos fixed and references added},

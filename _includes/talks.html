@@ -1,16 +1,16 @@
 <!doctype html>
 <html>
   <body>
-    <div class="tab-content" id="Research-content">
+    <div class="tab-content" id="Talks-content">
       <div style="margin: 15px; padding-top: 1px; padding-bottom: 30px">
-        {% if site.data.publications.future %}
+        {% if site.data.talks.future %}
         <h1>Future</h1>
-        {% for item in site.data.publications.future%} {% endfor %} {% endif %}
-        {% if site.data.publications.past %}
+        {% for item in site.data.talks.future%} {% endfor %} {% endif %} {% if
+        site.data.talks.past %}
         <h1>Past</h1>
         <div class="list">
-          {% for item in site.data.publications.published%}
-          <div class="talk">
+          {% for item in site.data.talks.past%}
+          <div class="article">
             <p>
               {% if item.in-person %}<i
                 class="fa-solid fa-person-chalkboard fa-sm"

@@ -54,6 +54,8 @@ a { color: color-mix(orange, black 25%); text-decoration: none; }
 
 .main:has(#Research-toggle:checked) #Research-content { display: block; }
 
+.main:has(#Talks-toggle:checked) #Talks-content { display: block; }
+
 .main:has(#CV-toggle:checked) #CV-content { display: block; }
 
 .main:has(#Teaching-toggle:checked) #Teaching-content { display: block; }
